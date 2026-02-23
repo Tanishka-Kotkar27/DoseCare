@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 :root {
     --bg-color: #ffffff;
     --text-color: #0f172a;
@@ -8,9 +10,9 @@
     --border-color: #f1f5f9;
     --input-bg: #ffffff;
     --input-border: #e2e8f0;
-    --primary: #2563eb;
-    --primary-hover: #1d4ed8;
-    --primary-light: #eff6ff;
+    --primary: #228BE6;
+    --primary-hover: #1c7ed6;
+    --primary-light: #e7f5ff;
 }
 
 body.dark-mode {
@@ -23,8 +25,8 @@ body.dark-mode {
     --border-color: #334155;
     --input-bg: #1e293b;
     --input-border: #475569;
-    --primary-hover: #3b82f6;
-    --primary-light: rgba(37, 99, 235, 0.1);
+    --primary-hover: #4dadf7;
+    --primary-light: rgba(34, 139, 230, 0.1);
 }
 
 body.dark-mode .logo img, 
@@ -113,7 +115,7 @@ body {
     white-space: nowrap;
 }
 
-.get-started:hover { background-color: #1d4ed8; }
+.get-started:hover { background-color: var(--primary-hover); }
 
 .nav-links a {
     text-decoration: none;
@@ -360,7 +362,7 @@ body.dark-mode .con1 {
     color: var(--text-muted);
 }
 .add-btn1{
-    background-color: #2563eb;
+    background-color: var(--primary);
     color: white;
     padding: 10px 15px;
     border: none;
@@ -409,7 +411,7 @@ body.dark-mode .con1 {
     font-size: 16px;
 }
 .add-first-btn {
-    background-color: #2563eb;
+    background-color: var(--primary);
     color: white;
     border: none;
     padding: 14px 28px;
@@ -418,7 +420,7 @@ body.dark-mode .con1 {
     font-size: 18px;
 }
 .add-first-btn:hover {
-    background-color: #1d4ed8;
+    background-color: var(--primary-hover);
     padding:16px 30px;
 }
 
@@ -461,7 +463,7 @@ body.dark-mode .con1 {
 .dropdown-content a:hover {
     background-color: var(--feature-bg);
     border-radius: 8px;
-    color: #2563eb;
+    color: var(--primary);
 }
 .user-container:hover .dropdown-content {
     display: block;
@@ -491,6 +493,18 @@ body.dark-mode .con1 {
     color: var(--text-muted);
     margin-bottom: 5px;
 }
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-check-label {
+    display: inline !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
 label{
     display: block;
     font-weight: 600;
@@ -500,6 +514,7 @@ label{
     color: var(--text-color);
 }
 input, select, textarea{
+    margin: 3px;
     width: 100%;
     padding: 12px;
     border-radius: 8px;
@@ -514,14 +529,24 @@ textarea{
 }
 .row{
     display: flex;
-    gap: 20px;
+    gap: 12px;
 }
+.user{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+.contact-input {
+    padding: 8px 12px !important;
+}
+
 .row div{
     flex: 1;
 }
 .add-btn{
     margin-top: 20px;
-    background-color: #0a7ae3;
+    background-color: var(--primary);
     color: white;
     border: none;
     padding: 12px;
@@ -566,4 +591,57 @@ textarea{
     .icon { width: 50px; height: 50px; margin-bottom: 16px; border-radius: 10px; }
     .icon img { width: 28px !important; height: 28px; }
     .feature-card { padding: 24px; }
+}
+
+@media (max-width: 440px) {
+    .get-started {
+        display: none;
+    }
+    .form-check-input {
+        width: 14px !important;
+        height: 14px !important;
+        margin-top: 0 !important;
+    }
+    .form-check-label {
+        font-weight: 400 !important;
+        font-size: 12px !important;
+    }
+    .sentence{
+        font-size: 14px;
+    }
+    .name{
+        font-size: 18px;
+    }
+    .empty-card p{
+        font-size: 14px;
+    }
+    .add-first-btn{
+        width: 200px;
+        padding: 10px;
+        font-size: 16px;
+         border-radius: 15px;
+    }
+    .add-first-btn:hover{
+        padding: 12px;
+    }
+    .add-btn{
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 15px;
+    }
+    .add-btn:hover{
+        padding: 12px;
+    }
+    .add-btn1{
+        padding: 5px 0px;
+        font-size: 14px;
+        border-radius: 10px;
+       
+    }
+    .add-btn1:hover{
+        padding: 7px 0px;
+    }
+    .back-link{
+        font-size: 16px;
+    }
 }
