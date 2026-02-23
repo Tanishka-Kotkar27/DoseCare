@@ -15,6 +15,7 @@
     --primary-light: #e7f5ff;
 }
 
+
 body.dark-mode {
     --bg-color: #0f172a;
     --text-color: #f8fafc;
@@ -103,7 +104,7 @@ body {
 }
 
 .get-started {
-    background-color: var(--primary);
+    background-color: #0F4C81;
     color: white;
     padding: 8px 18px;
     border: none;
@@ -156,7 +157,7 @@ body.dark-mode .con1 {
 }
 
 .badge {
-    color: var(--primary);
+    color: #0F4C81;
     background-color: var(--primary-light);
     padding: 8px 16px;
     border-radius: 50px;
@@ -180,7 +181,7 @@ body.dark-mode .con1 {
 }
 
 .btn1-con {
-    background-color: var(--primary);
+    background-color: #0F4C81;
     color: white;
     padding: 14px 32px;
     border-radius: 50px;
@@ -191,8 +192,8 @@ body.dark-mode .con1 {
 }
 
 .btn2-con {
-    color: var(--primary);
-    border: 2px solid var(--primary);
+    color: #0F4C81;
+    border: 2px solid #0F4C81;
     padding: 12px 30px;
     border-radius: 50px;
     background: transparent;
@@ -267,7 +268,7 @@ body.dark-mode .con1 {
 .num {
     width: 48px;
     height: 48px;
-    background: var(--primary);
+    background: #0F4C81;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -288,7 +289,7 @@ body.dark-mode .con1 {
 .con4-text h2 { font-size: 3rem; font-weight: 800; margin-bottom: 16px; color: var(--text-color); }
 .con4-text p { color: var(--text-muted); font-size: 1.25rem; }
 .con4-text button {
-    background: var(--primary);
+    background: #0F4C81;
     color: white;
     padding: 16px 40px;
     border-radius: 50px;
@@ -362,7 +363,7 @@ body.dark-mode .con1 {
     color: var(--text-muted);
 }
 .add-btn1{
-    background-color: var(--primary);
+    background-color:#0F4C81;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -411,7 +412,7 @@ body.dark-mode .con1 {
     font-size: 16px;
 }
 .add-first-btn {
-    background-color: var(--primary);
+    background-color:#0F4C81;
     color: white;
     border: none;
     padding: 14px 28px;
@@ -531,11 +532,23 @@ textarea{
     display: flex;
     gap: 12px;
 }
-.user{
-    border: 1px solid black;
+.user {
+    background-color: #0F4C81;
+    color: white;
+    border: 2px solid var(--primary-light);
     border-radius: 50%;
-    padding: 2px 5px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+.user:hover {
+    background-color: #0F4;
+    transform: scale(1.05);
 }
 .contact-input {
     padding: 8px 12px !important;
@@ -546,7 +559,7 @@ textarea{
 }
 .add-btn{
     margin-top: 20px;
-    background-color: var(--primary);
+    background-color: #0F4C81;
     color: white;
     border: none;
     padding: 12px;
@@ -593,7 +606,7 @@ textarea{
     .feature-card { padding: 24px; }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 500px) {
     .get-started {
         display: none;
     }
@@ -622,6 +635,7 @@ textarea{
          border-radius: 15px;
     }
     .add-first-btn:hover{
+        background-color: #0F4C81;
         padding: 12px;
     }
     .add-btn{
@@ -633,15 +647,37 @@ textarea{
         padding: 12px;
     }
     .add-btn1{
-        padding: 5px 0px;
+        padding: 7px;
         font-size: 14px;
         border-radius: 10px;
        
     }
     .add-btn1:hover{
-        padding: 7px 0px;
+        padding: 9px ;
     }
     .back-link{
         font-size: 16px;
+    }
+    .card h2{
+        font-size: 20px;
+    }
+    .subtitle{
+        font-size: 16px;
+    }
+    label{
+        font-size: 16px;
+    }
+    .con4-text p{
+        font-size: 18px;
+    }
+    .con4-text button{
+       
+        font-size: 18px;
+        padding:10px;
+        border-radius: 15px;
+        font-weight: 500;
+    }
+    .con4-text button:hover{
+        padding: 12px;
     }
 }
